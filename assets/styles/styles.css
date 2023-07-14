@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-base: "Open Sans", sans-serif;
+  --ff-alt: "Roboto", sans-serif;
+
+  /* Font size   */
+  --fs-l: 45px;
+  --fs-m: 16px;
+  --fs-s: 14px;
+  --fs-xs: 10px;
+
+  /* Color scheme */
+
+  --bg-clr: #fff;
+  --alt-bg-clr: #e8ebe4;
+  --border-clr: #444749;
+  --sf-clr: #828485;
+  --base-f-clr: #1b1f21;
+  --btn-clr: #a491d2;
+  --hover-btn-clr: #cdc3e6;
+  --focus-btn-clr: #bec1bb;
+  --pale-lavender: #d4dcff;
+}
+
+img {
+  width: 100%;
+}
+
+/* FLex container */
+
+.flex-container {
+  display: flex;
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  flex: 1 1 20%;
+  border: 1px solid;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: var(--ff-base);
+}
+
+.top {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+  padding: 1em;
+  align-items: center;
+  border-bottom: 1px solid var(--border-clr);
+}
+
+.first {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.first img {
+  width: 2.5em;
+  border-radius: 50%;
+}
+
+.text :nth-child(2) {
+  color: var(--sf-clr);
+}
+/* Iconos */
+
+.icons {
+  display: flex;
+  gap: 0.5em;
+  flex-grow: 1;
+}
+
+.icons i {
+  padding: 0 0.2em 0 0;
+  color: var(--sf-clr);
+}
+
+/* Button */
+
+.btn-c {
+  border-bottom: 1px solid var(--border-clr);
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  color: var(--bg-clr);
+  background-color: var(--btn-clr);
+  border: none;
+  border-radius: 5%;
+  padding: 1em;
+  width: 200px;
+  height: 50px;
+  font-family: var(--ff-base);
+  font-size: var(--fs-m);
+}
+
+button:hover {
+  background-color: var(--hover-btn-clr);
+}
+
+/* button:focus {
+  background-color: var(--focus-btn-clr);
+} */
+
+/* Chat */
+
+.chat {
+  display: flex;
+  border-bottom: 1px solid var(--border-clr);
+  gap: 0.5em;
+  padding: 1em 0em 1em 1.5em;
+  flex: 1 1 0;
+}
+
+.pfp {
+  flex-basis: 20%;
+}
+
+.pfp img {
+  border-radius: 50%;
+}
+
+.chat-text {
+  align-self: center;
+}
+
+.chat-text :nth-child(1) {
+  font-weight: bold;
+}
+/* Info */
+
+.info {
+  display: flex;
+  background-color: var(--alt-bg-clr);
+  flex: 1 1 75%;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+}
+
+.info-content h1,
+p {
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--ff-alt);
+}
+
+.info-image {
+  margin: 0.5em 0;
+}
