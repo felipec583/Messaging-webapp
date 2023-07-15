@@ -63,11 +63,16 @@ img {
   display: flex;
   justify-content: space-around;
   flex-grow: 1;
+  gap: 0.5em;
 }
 
 .first img {
   width: 2.5em;
   border-radius: 50%;
+}
+
+.text p {
+  text-align: left;
 }
 
 .text :nth-child(2) {
@@ -123,7 +128,7 @@ button:focus {
   border-bottom: 1px solid var(--border-clr);
   gap: 1em;
   padding: 0 1em;
-  flex: 1 1 12%;
+  flex: 0 0 12%;
   align-items: center;
   justify-content: flex-start;
 }
