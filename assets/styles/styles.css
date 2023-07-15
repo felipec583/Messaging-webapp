@@ -43,8 +43,8 @@ img {
 
 .contact {
   display: flex;
-  flex: 1 1 20%;
-  border: 1px solid;
+  flex: 1 1 15%;
+  border-right: 1px var(--border-clr) solid;
   min-height: 100vh;
   flex-direction: column;
   font-family: var(--ff-base);
@@ -112,34 +112,37 @@ button:hover {
   background-color: var(--hover-btn-clr);
 }
 
-/* button:focus {
+button:focus {
   background-color: var(--focus-btn-clr);
-} */
+}
 
 /* Chat */
 
 .chat {
   display: flex;
   border-bottom: 1px solid var(--border-clr);
-  gap: 0.5em;
-  padding: 1em 0em 1em 1.5em;
-  flex: 1 1 0;
+  gap: 1em;
+  padding: 0 1em;
+  flex: 1 1 12%;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.pfp {
-  flex-basis: 20%;
+.chat:last-of-type {
+  border: none;
 }
 
 .pfp img {
   border-radius: 50%;
-}
-
-.chat-text {
-  align-self: center;
+  width: 4em;
 }
 
 .chat-text :nth-child(1) {
   font-weight: bold;
+}
+
+.chat-text p {
+  text-align: left;
 }
 /* Info */
 
@@ -157,9 +160,14 @@ button:hover {
   flex: 0 0 50%;
 }
 
+h1 {
+  font-size: var(--fs-l);
+}
+
 .info-content h1,
 p {
   text-align: center;
+  font-family: var(--ff-base);
 }
 
 h1 {
